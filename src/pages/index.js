@@ -7,11 +7,13 @@ import siteConfig from "../../data/siteConfig"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SEO from "../components/SEO"
+import Wrapper from "../components/wrapper"
 import About from "../components/about"
 import Skills from "../components/skills"
 import Timeline from "../components/timeline/timeline"
 import Project from "../components/projects/projectItem"
-import Wrapper from "../components/wrapper"
+import Repositories from '../components/repositories'
+
 
 export const Separator = styled.hr`
   margin-top: 24px;
@@ -78,6 +80,8 @@ class Home extends React.Component {
             <Project />
 
             <Timeline />
+            <Repositories />
+
           </Container>
         </Wrapper>
       </Layout>
