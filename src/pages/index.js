@@ -13,6 +13,8 @@ import Skills from "../components/skills"
 import Timeline from "../components/timeline/timeline"
 import Project from "../components/projects/projectItem"
 import Repositories from '../components/repositories'
+import StyledResumeButton from '../resumeButton'
+
 
 
 export const Separator = styled.hr`
@@ -83,6 +85,8 @@ class Home extends React.Component {
             <Repositories />
 
           </Container>
+          <StyledResumeButton />
+
         </Wrapper>
       </Layout>
     )

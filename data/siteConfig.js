@@ -64,7 +64,7 @@ module.exports = {
     email: "aleksmilenkov@yahoo.com",
   },
   siteUrl: "localhost:8000",
-  pathPrefix: "/ResumeSiteGatsby", // Note: it must *not* have a trailing slash.
+  pathPrefix: "/resume-site-gatsby", // Note: it must *not* have a trailing slash.
   siteCover: "/images/cover2.jpg",
   // background_color: '#f9ee',
   // theme_color: '#eeeeee',
