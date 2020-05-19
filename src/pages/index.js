@@ -1,36 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import siteConfig from '../../data/siteConfig'
+import React from "react"
+import styled from "styled-components"
+import { Container, Row, Col } from "react-awesome-styled-grid"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import siteConfig from "../../data/siteConfig"
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import SEO from '../components/SEO'
-import About from '../components/about'
-import Skills from '../components/skills'
+import Layout from "../components/layout"
+import Hero from "../components/hero"
+import SEO from "../components/SEO"
+import About from "../components/about"
+import Skills from "../components/skills"
+import Timeline from "../components/timeline/timeline"
 
-
-
-
-
-import Wrapper from '../components/wrapper'
-
-
-
-
-
+import Wrapper from "../components/wrapper"
 
 export const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
-  `
-
+`
 
 class Home extends React.Component {
   render() {
-    
-
     const title = siteConfig.siteTitle
     const { keywords } = siteConfig
     return (
@@ -65,7 +54,7 @@ class Home extends React.Component {
                       <FaLinkedin className="social-icon" size="50" />
                     </a>
                   )}
-                  
+
                   {siteConfig.social.email && (
                     <a
                       className="social-link email"
@@ -86,28 +75,18 @@ class Home extends React.Component {
               </Col>
             </Row>
 
-
-
-
-            </Container>
-
-
-            </Wrapper>
+            <Timeline />
+          </Container>
+        </Wrapper>
       </Layout>
     )
   }
 }
 
-
-
-
-
-
 export default styled(Home)`
   .page-content {
     max-width: 100%;
     margin-bottom: 40px;
-    
   }
 
   .avatar {
@@ -126,7 +105,6 @@ export default styled(Home)`
   .social {
     margin-top: 20px;
     margin-bottom: 40px;
-    
   }
 
   .social-link {
@@ -147,9 +125,8 @@ export default styled(Home)`
   }
 
   @media (max-width: 400px) {
-    .social-link{
-      padding:6px;
-      }
-      
+    .social-link {
+      padding: 6px;
+    }
   }
 `
