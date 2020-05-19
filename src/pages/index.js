@@ -10,7 +10,7 @@ import SEO from "../components/SEO"
 import About from "../components/about"
 import Skills from "../components/skills"
 import Timeline from "../components/timeline/timeline"
-
+import Project from "../components/projects/projectItem"
 import Wrapper from "../components/wrapper"
 
 export const Separator = styled.hr`
@@ -74,6 +74,8 @@ class Home extends React.Component {
                 <Skills title="Skills" skills={siteConfig.skills} />
               </Col>
             </Row>
+
+            <Project />
 
             <Timeline />
           </Container>
