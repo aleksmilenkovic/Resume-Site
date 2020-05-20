@@ -16,19 +16,21 @@ const Project = ({ className }) => {
               <img className="hvrbox-layer_bottom" src={project.image} alt="" />
               <div className="hvrbox-layer_top">
                 <div className="hvrbox-text">
-                  Personal web development portfolio made with Gatsby as a
-                  static website generator, for speed, SEO, and ease of
-                  modification as I add new projects and skills.{' '}
+                  {project.text}
                 </div>
               </div>
             </div>
             <h4>{project.stack}</h4>
+            <div className="linkCheck">
+            {project.source !== "" ? 
             <a href={project.source}>
               <FaGithub size="20" />
               <span>Demo</span>
             </a>
+            : <span>Local development</span>}
+            </div>
             <Separator />
-            <Separator />
+            {/* <Separator /> */}
           </div>
         ))}
     </div>
@@ -88,14 +90,21 @@ export default styled(Project)`
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  .hvrbox .hvrbox-text_mobile {
-    font-size: 8px;
-    border-top: 1px solid rgba(179, 179, 179, 0.7);
-    margin-top: 5px;
-    padding-top: 2px;
-    display: none;
+  
+
+
+
+   @media (max-width: 780px) {
+    .hvrbox .hvrbox-text{
+      font-size:20px
+    }
   }
-  .hvrbox.active .hvrbox-text_mobile {
-    display: block;
-  }
+
+  @media (max-width: 400px) {
+    .hvrbox .hvrbox-text{
+      font-size:10px;
+      font-weight:200;
+      
+    }
+  } 
 `

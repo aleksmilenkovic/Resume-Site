@@ -1,57 +1,56 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
-//import { faSave } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import React from "react"
+import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
+import { FaRegFilePdf } from "react-icons/fa"
 const StyledResumeButton = styled.a`
   z-index: 999;
-  height: 0;
+  height: 3em;
   padding: 1em 0;
-  width: 9em;
-  margin: 0 auto;
+  width: 7em;
+  margin: 3em auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1.5em;
-  border: 2px solid blue;
-  background-color: white;
-  color: black; 
+  border-radius: 4em;
+  border: 3px solid #ab1b1b;
+  background-color: rgba(37, 48, 59, 0.7);
+  color: #cce9ed;
   text-transform: capitalize;
   cursor: pointer;
   svg {
     margin-right: 0.5em;
   }
-   &:hover {
-    color: white;
-    background-color: blue;
-  } 
-`;
+  &:hover {
+    color: #cce9ed;
+    background-color: #ab1b1b;
+    border: 3px solid rgba(37, 48, 59, 0.5);
+    font-weight: 600;
+  }
+`
 
 const ResumeButton = () => {
   const { about } = useStaticQuery(graphql`
-  query {
-    about: file(relativePath: { eq: "about.md" }) {
-      childMarkdownRemark {
-        frontmatter {
-          resume
+    query {
+      about: file(relativePath: { eq: "about.md" }) {
+        childMarkdownRemark {
+          frontmatter {
+            resume
+          }
         }
       }
     }
-  }
-  
-     
-  `);
+  `)
   return (
     <StyledResumeButton
       href={about.childMarkdownRemark.frontmatter.resume}
       target="_blank"
       rel="noopener noreferrer"
+      
     >
-      {/* <FontAwesomeIcon icon={faSave} /> */}
+      {<FaRegFilePdf />}
       Resume
     </StyledResumeButton>
-  );
-};
+  )
+}
 
-export default ResumeButton;
+export default ResumeButton

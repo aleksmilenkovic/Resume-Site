@@ -6,16 +6,14 @@ import siteConfig from "../../data/siteConfig"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import SEO from "../components/SEO"
+// import SEO from "../components/SEO"
 import Wrapper from "../components/wrapper"
 import About from "../components/about"
 import Skills from "../components/skills"
 import Timeline from "../components/timeline/timeline"
 import Project from "../components/projects/projectItem"
-import Repositories from '../components/repositories'
-import StyledResumeButton from '../resumeButton'
-
-
+import Repositories from "../components/repositories"
+import StyledResumeButton from "../resumeButton"
 
 export const Separator = styled.hr`
   margin-top: 24px;
@@ -25,10 +23,10 @@ export const Separator = styled.hr`
 class Home extends React.Component {
   render() {
     const title = siteConfig.siteTitle
-    const { keywords } = siteConfig
+    // const { keywords } = siteConfig
     return (
       <Layout location={this.props.location}>
-        <SEO title={title} keywords={keywords} />
+        {/* <SEO title={title} keywords={keywords} /> */}
 
         <Hero heroImg={siteConfig.siteCover} title={title} />
 
@@ -46,6 +44,7 @@ class Home extends React.Component {
                     <a
                       className="social-link github"
                       href={siteConfig.social.github}
+                      target="_blank"
                     >
                       <FaGithub className="social-icon" size="50" />
                     </a>
@@ -54,6 +53,7 @@ class Home extends React.Component {
                     <a
                       className="social-link linkedin"
                       href={siteConfig.social.linkedin}
+                      target="_blank"
                     >
                       <FaLinkedin className="social-icon" size="50" />
                     </a>
@@ -63,13 +63,17 @@ class Home extends React.Component {
                     <a
                       className="social-link email"
                       href={`mailto:${siteConfig.social.email}`}
+                      target="_blank"
                     >
                       <FaEnvelope className="social-icon" size="50" />
                     </a>
                   )}
+                  <StyledResumeButton />
+                  <Separator />
                 </div>
               </Col>
             </Row>
+
             <Row>
               <Col xs={4} sm={4}>
                 <About title="About" text={siteConfig.authorDescription} />
@@ -79,14 +83,17 @@ class Home extends React.Component {
               </Col>
             </Row>
 
+            <Separator />
+
             <Project />
 
             <Timeline />
+            <StyledResumeButton  />
+
+            <Separator />
+
             <Repositories />
-
           </Container>
-          <StyledResumeButton />
-
         </Wrapper>
       </Layout>
     )
@@ -94,6 +101,8 @@ class Home extends React.Component {
 }
 
 export default styled(Home)`
+
+
   .page-content {
     max-width: 100%;
     margin-bottom: 40px;

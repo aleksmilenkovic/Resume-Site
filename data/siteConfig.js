@@ -82,6 +82,8 @@ module.exports = {
       stack: "Gatsby.js, React",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
       image: "/images/Project2Img.png",
+      text:
+        "Personal web development portfolio made with Gatsby as a static website generator, for speed, SEO, and ease of modification as I add new projects and skills.",
     },
 
     {
@@ -89,6 +91,17 @@ module.exports = {
       stack: "HTML, CSS, JavaScript",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
       image: "/images/KnmDesk1.png",
+      text:
+        "Static, fully responsive webpage built with HTML, CSS and Javascript.",
+    },
+
+    {
+      title: "Bemastudio",
+      stack: "PHP, MySQL, JavaScript, Wordpress, WP-cli",
+      source: "",
+      image: "/images/bemaDesc.png",
+      text:
+        "In progress - update client's old site from Wordpress 3.5.2 to 5.4, customisation and redesign.",
     },
   ],
 }
