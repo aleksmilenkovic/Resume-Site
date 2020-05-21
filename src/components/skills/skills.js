@@ -31,7 +31,7 @@ export default styled(({ className, title = "Skills", skills = [] }) => {
     text-align: center;
   }
 
-  @media (max-width: 400px) {
+  @media (min-width: 320px) {
     h1 {
       text-align: center;
     }

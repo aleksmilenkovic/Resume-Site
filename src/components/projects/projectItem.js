@@ -100,7 +100,7 @@ export default styled(Project)`
   @media (max-width: 400px) {
     .hvrbox .hvrbox-text {
       font-size: 10px;
-      font-weight: 200;
+      font-weight: 100;
     }
   }
 `

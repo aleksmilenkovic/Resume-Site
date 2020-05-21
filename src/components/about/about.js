@@ -15,7 +15,7 @@ export default styled(({ className, title = "about", text = "" }) => {
     font-size: 24px;
   }
 
-  @media (max-width: 400px) {
+  @media (min-width: 320px) {
     p {
       font-size: 20px;
       text-align:center;

@@ -27,7 +27,7 @@ const HeroTitle = styled.h1`
   color: #212121;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.7);
   @media (max-width: 400px) {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0 auto;
   }
 `
