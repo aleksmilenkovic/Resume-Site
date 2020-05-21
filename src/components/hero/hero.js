@@ -32,7 +32,7 @@ const HeroTitle = styled.h1`
   @media (max-width: 600px) {
     font-size: 3rem;
     margin: 0 auto;
-    position:fixed;
+    position:absolute;
   }
 `
 
@@ -54,7 +54,7 @@ export default styled(Hero)`
   ${p =>
     `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
   width:100%;
-  height: 90vh;
+  height: 98vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

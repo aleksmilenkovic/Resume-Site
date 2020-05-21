@@ -101,6 +101,9 @@ export default styled(Project)`
     .hvrbox .hvrbox-text {
       font-size: 10px;
       font-weight: 100;
+      padding:0;
+      margin:0;
+      line-height:0.8;
     }
   }
 `
