@@ -26,7 +26,7 @@ const HeroTitle = styled.h1`
   margin: 10px 60px;
   color: #212121;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.7);
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     font-size: 2rem;
     margin: 0 auto;
   }
@@ -50,7 +50,7 @@ export default styled(Hero)`
   ${p =>
     `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
   width:100%;
-  height: 100vh;
+  height: 70vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
