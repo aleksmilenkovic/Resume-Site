@@ -11,6 +11,9 @@ const HeroContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 600px){
+    width:100%;
+  }
 `
 
 const TitleContainer = styled.div`
@@ -26,8 +29,8 @@ const HeroTitle = styled.h1`
   margin: 10px 60px;
   color: #212121;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.7);
-  @media (max-width: 420px) {
-    font-size: 2rem;
+  @media (max-width: 600px) {
+    font-size: 3rem;
     margin: 0 auto;
   }
 `
@@ -50,7 +53,7 @@ export default styled(Hero)`
   ${p =>
     `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
   width:100%;
-  height: 70vw;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

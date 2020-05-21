@@ -97,7 +97,7 @@ export default styled(Project)`
     }
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .hvrbox .hvrbox-text {
       font-size: 10px;
       font-weight: 100;
