@@ -1,8 +1,8 @@
-import React from 'react'
-import siteConfig from '../../../data/siteConfig'
-import styled from 'styled-components'
-import { FaGithub } from 'react-icons/fa'
-import { Separator } from '../../pages/index'
+import React from "react"
+import siteConfig from "../../../data/siteConfig"
+import styled from "styled-components"
+import { FaGithub } from "react-icons/fa"
+import { Separator } from "../../pages/index"
 
 const Project = ({ className }) => {
   return (
@@ -10,24 +10,24 @@ const Project = ({ className }) => {
       <h1>Projects</h1>
       {siteConfig.projects &&
         siteConfig.projects.map(project => (
-          <div>
+          <div key={project.id}>
             <h2 className="title">{project.title}</h2>
             <div className="hvrbox">
               <img className="hvrbox-layer_bottom" src={project.image} alt="" />
               <div className="hvrbox-layer_top">
-                <div className="hvrbox-text">
-                  {project.text}
-                </div>
+                <div className="hvrbox-text">{project.text}</div>
               </div>
             </div>
             <h4>{project.stack}</h4>
             <div className="linkCheck">
-            {project.source !== "" ? 
-            <a href={project.source}>
-              <FaGithub size="20" />
-              <span>Demo</span>
-            </a>
-            : <span>Local development</span>}
+              {project.source !== "" ? (
+                <a href={project.source}>
+                  <FaGithub size="20" />
+                  <span>Demo</span>
+                </a>
+              ) : (
+                <span>Local development</span>
+              )}
             </div>
             <Separator />
             {/* <Separator /> */}
@@ -90,21 +90,17 @@ export default styled(Project)`
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
 
-
-
-   @media (max-width: 780px) {
-    .hvrbox .hvrbox-text{
-      font-size:20px
+  @media (max-width: 780px) {
+    .hvrbox .hvrbox-text {
+      font-size: 20px;
     }
   }
 
   @media (max-width: 400px) {
-    .hvrbox .hvrbox-text{
-      font-size:10px;
-      font-weight:200;
-      
+    .hvrbox .hvrbox-text {
+      font-size: 10px;
+      font-weight: 200;
     }
-  } 
+  }
 `

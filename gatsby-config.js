@@ -11,7 +11,7 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-react-helmet`,
-  
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -20,8 +20,6 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitle,
         start_url: config.pathPrefix,
-        background_color: config.background_color,
-        theme_color: config.theme_color,
         display: config.display,
         icon: config.icon,
       },
@@ -29,13 +27,13 @@ module.exports = {
 
     `gatsby-plugin-styled-components`,
 
-     {
-       resolve: `gatsby-source-filesystem`,
-       options: {
-         name: `markdown-pages`,
-         path: `${__dirname}/src/markdown-pages`,
-       },
-     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
 
     `gatsby-transformer-remark`,
 

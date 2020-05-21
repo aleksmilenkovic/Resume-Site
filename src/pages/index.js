@@ -6,7 +6,7 @@ import siteConfig from "../../data/siteConfig"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-// import SEO from "../components/SEO"
+import SEO from "../components/SEO/seo"
 import Wrapper from "../components/wrapper"
 import About from "../components/about"
 import Skills from "../components/skills"
@@ -23,10 +23,10 @@ export const Separator = styled.hr`
 class Home extends React.Component {
   render() {
     const title = siteConfig.siteTitle
-    // const { keywords } = siteConfig
+     const { keywords } = siteConfig
     return (
       <Layout location={this.props.location}>
-        {/* <SEO title={title} keywords={keywords} /> */}
+        {<SEO title={title} keywords={keywords} />}
 
         <Hero heroImg={siteConfig.siteCover} title={title} />
 
@@ -45,6 +45,7 @@ class Home extends React.Component {
                       className="social-link github"
                       href={siteConfig.social.github}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaGithub className="social-icon" size="50" />
                     </a>
@@ -54,6 +55,7 @@ class Home extends React.Component {
                       className="social-link linkedin"
                       href={siteConfig.social.linkedin}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaLinkedin className="social-icon" size="50" />
                     </a>
@@ -64,6 +66,7 @@ class Home extends React.Component {
                       className="social-link email"
                       href={`mailto:${siteConfig.social.email}`}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaEnvelope className="social-icon" size="50" />
                     </a>
@@ -88,7 +91,7 @@ class Home extends React.Component {
             <Project />
 
             <Timeline />
-            <StyledResumeButton  />
+            <StyledResumeButton />
 
             <Separator />
 
@@ -101,8 +104,6 @@ class Home extends React.Component {
 }
 
 export default styled(Home)`
-
-
   .page-content {
     max-width: 100%;
     margin-bottom: 40px;

@@ -32,7 +32,7 @@ module.exports = {
       duration: "4 month",
       occupation: "Project Manager",
       description:
-        "As a project manager I had the overall responsibility for the successful initiation, planning, design, execution, monitoring, controlling and closure of an electric scooter sharing platform app. I have worked closely with team of 3 developers but also with investors, suppliers and vendors.",
+        "As a project manager, I had the overall responsibility for the successful initiation, planning, design, execution, monitoring, controlling, and closure of an electric scooter sharing platform app. I have worked closely with a team of 3 developers but also with investors, suppliers, and vendors.",
     },
     {
       company: "Support Adventure",
@@ -43,7 +43,7 @@ module.exports = {
       duration: "2 month",
       occupation: "Web developer",
       description:
-        "Frontend development of an online platform for company purpose.",
+        "Frontend development of an online platform for company purposes.",
     },
     {
       company: "Gigatron",
@@ -54,7 +54,7 @@ module.exports = {
       duration: "1 month",
       occupation: "Frontend Web Developer - INTERN",
       description:
-        "As a part of a team I had an oportunity to develop UX/UI with React-Redux for an e-commerce website",
+        "As a part of a team, I had an opportunity to develop UX/UI with React-Redux for an e-commerce website.",
     },
     /* ... */
   ],
@@ -64,10 +64,8 @@ module.exports = {
     email: "aleksmilenkov@yahoo.com",
   },
   siteUrl: "localhost:8000",
-  pathPrefix: "/resume-site-gatsby", // Note: it must *not* have a trailing slash.
+  pathPrefix: "/resume-site-gatsby",
   siteCover: "/images/cover2.jpg",
-  // background_color: '#f9ee',
-  // theme_color: '#eeeeee',
   display: "minimal-ui",
   icon: "src/assets/gatsby-icon.png",
   headerLinks: [
@@ -78,6 +76,7 @@ module.exports = {
   ],
   projects: [
     {
+      id: 1,
       title: "Resume Page",
       stack: "Gatsby.js, React",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
@@ -87,21 +86,23 @@ module.exports = {
     },
 
     {
+      id: 2,
       title: "KNM - Responsive Webpage",
       stack: "HTML, CSS, JavaScript",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
       image: "/images/KnmDesk1.png",
       text:
-        "Static, fully responsive webpage built with HTML, CSS and Javascript.",
+        "Static, fully responsive webpage built with HTML, CSS, and Javascript.",
     },
 
     {
+      id: 3,
       title: "Bemastudio",
       stack: "PHP, MySQL, JavaScript, Wordpress, WP-cli",
       source: "",
       image: "/images/bemaDesc.png",
       text:
-        "In progress - update client's old site from Wordpress 3.5.2 to 5.4, customisation and redesign.",
+        "In progress - update client's old site from Wordpress 3.5.2 to 5.4, customization and redesign.",
     },
   ],
 }

@@ -28,7 +28,7 @@ export default styled(({ className, title = "Skills", skills = [] }) => {
     padding: 10px;
     font-size: 1.3rem;
     font-weight: 600;
-    text-align:center;
+    text-align: center;
   }
 
   @media (max-width: 400px) {
@@ -36,9 +36,9 @@ export default styled(({ className, title = "Skills", skills = [] }) => {
       text-align: center;
     }
 
-  ul{
-    justify-content:center;
-    margin-left:-10px;
-  }
+    ul {
+      justify-content: center;
+      margin-left: -10px;
+    }
   }
 `

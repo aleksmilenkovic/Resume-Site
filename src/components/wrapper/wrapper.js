@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const Wrapper = styled.main.attrs({
-  role: 'main',
+  role: "main",
 })`
   position: relative;
   border-radius: 9px;
@@ -9,7 +9,7 @@ const Wrapper = styled.main.attrs({
   max-width: 960px;
   border-bottom: 1px solid #ebf2f6;
   word-wrap: break-word;
-  background-color:#cce9ed;
+  background-color: #cce9ed;
   margin: 0px auto 30px auto;
   top: -35px;
   padding: 50px;
@@ -21,10 +21,9 @@ const Wrapper = styled.main.attrs({
     padding: 25px;
   }
   @media (max-width: 400px) {
-    max-width:100%;
-    top:0;
+    max-width: 100%;
+    top: 0;
   }
 `
 
 export default Wrapper
-

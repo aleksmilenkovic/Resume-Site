@@ -45,7 +45,6 @@ const ResumeButton = () => {
       href={about.childMarkdownRemark.frontmatter.resume}
       target="_blank"
       rel="noopener noreferrer"
-      
     >
       {<FaRegFilePdf />}
       Resume
