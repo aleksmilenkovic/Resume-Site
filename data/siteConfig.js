@@ -61,7 +61,7 @@ module.exports = {
   social: {
     linkedin: "https://www.linkedin.com/in/aleksandar-milenkovi%C4%87-1st/",
     github: "https://github.com/aleksmilenkovic",
-    email: "aleksmilenkov@yahoo.com",
+    email: "aleksandar.milenkovic11@gmail.com",
   },
   siteUrl: "localhost:8000",
   pathPrefix: "/resume-site-gatsby",
@@ -79,7 +79,7 @@ module.exports = {
       id: 1,
       title: "Resume Page (This.page)",
       stack: "Gatsby.js, React",
-      source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
+      source: "https://github.com/aleksmilenkovic/resume-site-gatsby",
       demo: "https://aleksandar.netlify.app/",
       image: "/images/Project2Img.png",
       text:
