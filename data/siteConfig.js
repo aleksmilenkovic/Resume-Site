@@ -77,9 +77,10 @@ module.exports = {
   projects: [
     {
       id: 1,
-      title: "Resume Page",
+      title: "Resume Page (This.page)",
       stack: "Gatsby.js, React",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
+      demo: "https://aleksandar.netlify.app/",
       image: "/images/Project2Img.png",
       text:
         "Personal web development portfolio made with Gatsby as a static website generator, for speed, SEO, and ease of modification as I add new projects and skills.",
@@ -90,6 +91,7 @@ module.exports = {
       title: "KNM - Responsive Webpage",
       stack: "HTML, CSS, JavaScript",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
+      demo: "https://aleksmilenkovic.github.io/Responsive-Web-Page/",
       image: "/images/KnmDesk1.png",
       text:
         "Static, fully responsive webpage built with HTML, CSS, and Javascript.",

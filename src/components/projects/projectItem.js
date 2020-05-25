@@ -1,7 +1,7 @@
 import React from "react"
 import siteConfig from "../../../data/siteConfig"
 import styled from "styled-components"
-import { FaGithub } from "react-icons/fa"
+import { FaGithub, FaLink } from "react-icons/fa"
 import { Separator } from "../../pages/index"
 
 const Project = ({ className }) => {
@@ -20,11 +20,18 @@ const Project = ({ className }) => {
             </div>
             <h4>{project.stack}</h4>
             <div className="linkCheck">
-              {project.source !== "" ? (
+              {project.source && project.demo !== "" ? (
+                <div>
                 <a href={project.source}>
                   <FaGithub size="20" />
-                  <span>Demo</span>
+                  <span>Source</span>
                 </a>
+                 <br />
+                <a href={project.demo}>
+                <FaLink size="20" />
+                <span>Demo</span>
+                </a>
+                </div>
               ) : (
                 <span>Local development</span>
               )}
