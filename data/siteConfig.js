@@ -37,10 +37,10 @@ module.exports = {
     {
       company: "Support Adventure",
       begin: {
-        month: "july",
+        month: "September",
         year: "2019",
       },
-      duration: "2 month",
+      duration: "1 month",
       occupation: "Web developer",
       description:
         "Frontend development of an online platform for company purposes.",
@@ -48,7 +48,7 @@ module.exports = {
     {
       company: "Gigatron",
       begin: {
-        month: "June",
+        month: "May",
         year: "2019",
       },
       duration: "1 month",
