@@ -24,6 +24,17 @@ module.exports = {
   ],
   jobs: [
     {
+      company: "HDD Computers",
+      begin: {
+        month: "aug",
+        year: "2020",
+      },
+      duration: "present",
+      occupation: "Sales and Tech Support",
+      description:
+        "Sales and tech support for company's clients, service management.",
+      },
+    {
       company: "Green Owl e-Scooters",
       begin: {
         month: "nov",
@@ -37,7 +48,7 @@ module.exports = {
     {
       company: "Support Adventure",
       begin: {
-        month: "September",
+        month: "sep",
         year: "2019",
       },
       duration: "1 month",
