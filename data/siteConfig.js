@@ -98,7 +98,17 @@ module.exports = {
     },
 
     {
-      id: 2,
+      id:2,
+      title: "Horrorscope",
+      stack: "Vanilla JavaScript, HTML5, CSS3",
+      source: "https://github.com/aleksmilenkovic/horrorscope",
+      demo: "https://aleksmilenkovic.github.io/horrorscope/c",
+      image: "/images/horrorScope.png",
+      text: "A simple application that shows your 'horrorscope' sign based on your birthday input data."
+    },
+
+    {
+      id: 3,
       title: "KNM - Responsive Webpage",
       stack: "HTML, CSS, JavaScript",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
@@ -109,7 +119,7 @@ module.exports = {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Bemastudio",
       stack: "PHP, MySQL, JavaScript, Wordpress, WP-cli",
       source: "",
