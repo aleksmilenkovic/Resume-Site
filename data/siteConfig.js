@@ -102,7 +102,7 @@ module.exports = {
       title: "Horrorscope",
       stack: "Vanilla JavaScript, HTML5, CSS3",
       source: "https://github.com/aleksmilenkovic/horrorscope",
-      demo: "https://aleksmilenkovic.github.io/horrorscope/c",
+      demo: "https://aleksmilenkovic.github.io/horrorscope/",
       image: "/images/horrorScope.png",
       text: "A simple application that shows your 'horrorscope' sign based on your birthday input data."
     },
