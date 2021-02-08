@@ -6,8 +6,8 @@ module.exports = {
   githubUsername: "aleksmilenkovic",
   authorAvatar: "/images/upworkPhoto.jpg",
   authorDescription: ` <br />
-    I am an enthusiastic frontend web developer with rich previous experience in marketing and sales.
-    Able to grasp new concepts quickly, I process and apply new skills and ideas efficiently. `,
+  I am an enthusiastic web developer interested both in the back-end and front-end. Able to grasp new concepts quickly, I process and apply new skills and ideas efficiently.
+  As I am mostly self-taught, I am looking for an opportunity to learn, grow, shape, and master skills and break through the industry. `,
   skills: [
     {
       name: "HTML5 CSS3 JavaScript",
@@ -30,9 +30,9 @@ module.exports = {
         year: "2020",
       },
       duration: "present",
-      occupation: "Sales and Tech Support",
+      occupation: "Web and Tech Support",
       description:
-        "Sales and tech support for company's clients, service management.",
+        "Web and tech support for company's clients, service management.",
       },
     {
       company: "Green Owl e-Scooters",
