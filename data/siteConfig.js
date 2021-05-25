@@ -52,7 +52,7 @@ module.exports = {
         year: "2019",
       },
       duration: "1 month",
-      occupation: "Web developer",
+      occupation: "Web developer - Contract",
       description:
         "Frontend development of an online platform for company purposes.",
     },
@@ -98,7 +98,18 @@ module.exports = {
     },
 
     {
-      id:2,
+      id: 2,
+      title: "Bemastudio",
+      stack: "PHP, MySQL, JavaScript, Wordpress, WP-cli",
+      demo: "http://www.bemastudio.com/",
+      source: "http://www.bemastudio.com/",
+      image: "/images/bemaDesc.png",
+      text:
+        "Updating client's old site from Wordpress 3.5.2 to 5.4, customization and redesign.",
+    },
+
+    {
+      id:3,
       title: "Horrorscope",
       stack: "Vanilla JavaScript, HTML5, CSS3",
       source: "https://github.com/aleksmilenkovic/horrorscope",
@@ -108,7 +119,7 @@ module.exports = {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "KNM - Responsive Webpage",
       stack: "HTML, CSS, JavaScript",
       source: "https://github.com/aleksmilenkovic/Responsive-Web-Page",
@@ -119,13 +130,27 @@ module.exports = {
     },
 
     {
-      id: 4,
-      title: "Bemastudio",
-      stack: "PHP, MySQL, JavaScript, Wordpress, WP-cli",
-      source: "",
-      image: "/images/bemaDesc.png",
+      id: 5,
+      title: "VS - Landing Page",
+      stack: "HTML, CSS, JavaScript",
+      source: "https://github.com/aleksmilenkovic/VS-Landing-Page",
+      demo: "https://aleksmilenkovic.github.io/VS-Landing-Page/",
+      image: "/images/vsFullScrWithMob.png",
       text:
-        "In progress - update client's old site from Wordpress 3.5.2 to 5.4, customization and redesign.",
+        "Simple, responsive landing page",
     },
+
+    {
+      id: 6,
+      title: "HDD Website and Shop (in the development stage, please contact me for a password to preview)",
+      stack: "WooCommerce, Wordpress, PHP, MySQL, JavaScript",
+      source: "https://hdd.rs",
+      demo: "https://hdd.rs",
+      image: "/images/hddPreview.PNG",
+      text:
+        "Website and Online Store",
+    },
+
+    
   ],
 }
