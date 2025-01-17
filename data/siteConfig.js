@@ -24,12 +24,24 @@ module.exports = {
   ],
   jobs: [
     {
+      company: "Allied Testing",
+      begin: {
+        month: "jun",
+        year: "2021",
+      },
+      duration: "present",
+      occupation: "QA Automation Engineer for Fitch Solutions",
+      description:
+        "QA Automation Engineer - working on API, UI/UX, End2End automation testing processes for the Fitch Ratings and Fitch Solutions clients applications",
+      },
+    {
       company: "HDD Computers",
       begin: {
         month: "aug",
         year: "2020",
       },
-      duration: "present",
+      duration: "11 month",
+      year: "2020",
       occupation: "Web and Tech Support",
       description:
         "Web and tech support for company's clients, service management.",
@@ -154,3 +166,5 @@ module.exports = {
     
   ],
 }
+
+
